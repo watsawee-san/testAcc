@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+	<title>Test Accelerometer</title>
+	<script src="js/gyro.js"></script>
+ </head>
+ <body>
+	<h1>Check Accelerometer</h1>
+	<script>
+	gyro.frequency = 10000
+    gyro.startTracking(function(o) {
+        // o.x, o.y, o.z for accelerometer
+        // o.alpha, o.beta, o.gamma for gyro
+		alert("x = "+o.x+", y = "+o.y+", z = "+o.z);
+    });
+	</script>
+ </body>
+</html>
